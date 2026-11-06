@@ -1,1 +1,124 @@
+/* Catering Block Styling */
+.catering-section {
+  background-color: var(--cc-white);
+  padding: 5rem 1.5rem;
+  border-top: 1px solid rgba(79, 93, 101, 0.12);
+  border-bottom: 1px solid rgba(79, 93, 101, 0.12);
+}
 
+.catering-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .catering-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.catering-tag {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cc-raspberry);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.catering-title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--cc-ink);
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+}
+
+.catering-desc {
+  font-family: var(--font-body);
+  color: var(--cc-tin-slate);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.catering-perks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--cc-ink);
+}
+
+.catering-perks li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.catering-perks li::before {
+  content: "🐾";
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+.catering-form-box {
+  background: var(--cc-cream);
+  padding: 2.25rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(33, 33, 33, 0.04);
+}
+
+.form-title {
+  font-family: var(--font-body);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--cc-ink);
+}
+
+.catering-form label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--cc-ink);
+}
+
+.catering-form input,
+.catering-form select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(79, 93, 101, 0.25);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  background: var(--cc-white);
+  box-sizing: border-box;
+}
+
+.catering-submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: var(--cc-raspberry);
+  color: var(--cc-white);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.catering-submit-btn:hover {
+  opacity: 0.9;
+}
